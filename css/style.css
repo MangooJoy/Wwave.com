@@ -1,0 +1,130 @@
+article {
+    background-color: #ddd;
+}
+
+button {
+    border: none;
+    margin-bottom: 10px;
+    padding: 10px 25px;
+    background-color: #ddd; 
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: paleturquoise;
+    color: white;
+}
+
+footer {
+    background-color: rgb(53, 54, 54);
+    font-size: 10px;
+    color: rgb(101, 104, 103);
+    text-align: center;
+    font-weight: bold;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/*body 초기화*/
+body {
+    background-color: cadetblue;
+}
+.navb {
+    width: 1500px;
+    display: flex;
+    justify-content: space-between;
+}
+nav {
+width: 100%;
+height: 48px;
+display: flex;
+justify-content: space-evenly;
+background: rgb(255, 255, 255);
+position: fixed;
+z-index: 99999;
+}
+nav > a {
+font-size: 26px;
+text-decoration: none;
+text-align: center;
+pointer-events: none;
+color: black;
+font-weight: bold;
+}
+.logo {
+margin-top: 7px;
+
+}
+
+ul, li {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+#main-menu > li {
+float: left;
+}
+
+#main-menu > li > a {
+font-size: 0.85rem;
+color: rgba(0, 0, 0, 0.85);
+text-align: center;
+text-decoration: none;
+letter-spacing: 0.05em;
+display: block;
+padding: 14px 36px;
+font-weight: bold;
+}
+#main-menu > li:hover {
+background-color: #52ace7b0;
+transition-duration: 0.5s;
+}
+#sub-menu {
+opacity: 0;
+visibility: hidden;
+transition: all 0.15s ease-in;
+text-align: center;
+}
+
+#sub-menu > li {
+padding: 16px 18px;
+border-top: 1px solid rgba(255, 255, 255, 0.15);;
+}
+
+#sub-menu > li >  a {
+color: rgb(49, 49, 49);
+text-decoration: none;
+font-weight: bold;
+}
+
+#main-menu > li:hover #sub-menu {
+opacity: 1;
+visibility: visible;
+transition-duration: 0.2s;
+}
+
+#sub-menu > li >  a:hover {
+text-decoration: underline;
+}
+
+section {
+column-width: 15em;
+background: #dadadf;
+padding: 2em 12em;
+}
+.navbar_link > li {
+margin-top: 12px;
+float: left;
+padding: 11px;
+margin-top: 0;
+}
+.navbar__toggleBtn {
+display: none;
+}
+.container mt-3 {
+background-color: wheat;
+}
+.carousel-caption{
+color: black;
+}
