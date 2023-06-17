@@ -2,7 +2,7 @@
 <!-- code 0524-->
 <html>
     <head>
-        <title>Wwave coffee</title>
+        <title>campaign</title>
         <meta charset="utf-8">
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,7 +16,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
         <style>
         article {
-        background-color: #ddd;
+        background-color: white;
         }
 
         button {
@@ -44,7 +44,9 @@
 
         /*body 초기화*/
         body {
-            background-color: cadetblue;
+            margin: 0;
+            padding: 0;
+            background-color: #d9d9d9;
         }
         .navb {
             width: 1500px;
@@ -145,6 +147,44 @@
         .carousel-caption{
         color: black;
         }
+        /* campaign style */
+        .campaign {
+            padding-top:130px;
+            text-decoration-line: none;
+            width: 1100px;
+            margin: auto;
+            padding-bottom: 70px;
+       }
+        .campaign > h1  {
+            font-size: 38px;
+            font-weight: bold;
+            padding-bottom: 10px;
+            text-align: center;  
+        }
+        
+        .campaign > p {
+            font-size: 20px;
+            font-weight: 400;
+            padding-bottom: 10px;
+            text-align: center;  
+        }
+        .contents {
+            margin: auto;
+            border-top: 3px solid #52ace7b0;
+            border-bottom: 3px solid #52ace7b0;
+            height: auto;
+            margin-bottom: 32px;
+            
+            padding-bottom: 30px;   
+        }
+        .contents > .contents_top {
+            padding-bottom: 10px;
+            padding-top: 20px;
+            text-align: center;
+        }
+        .c_img {
+            float: left;
+        }
         </style>
     </head>
     
@@ -192,7 +232,25 @@
             </div>
         </nav>
         <article>
-            
+            <div class="campaign">
+                <h1>Wwave Campaign</h1>
+                <p>“환경과 지역사회를 아우르는 웨이브커피는 ‘그린스토어’를 통해 친환경매장 구축하고<br>지역사회에 환경적으로 기여하고,나아가 지구촌 기후변화 방지활동에도 적극 참여하고 있습니다.”</p>
+                
+                <div class="contents">
+                    <div class="contents_top">
+                        <div class="c_img">
+                            <img src="./img/trash.png" style="width: 250px; height: 270px;">
+                        </div>
+                        <div class="c_txt">
+                        <p style="font-weight: bold;">바다보호 매장</p>
+                        <p>웨이브는 환경피해를 최소화하고 전세계 기후변화 방지를 위해 노력할것입니다.<br> 앞으로 진행할 바다 보호 활동에 많은 고객들의 참여를 지원합니다.</p> 
+                        <p>또한 바다 보호 활동에 참여시 일정 스탬프 이상을 모으면 고객에게 음료를 증정하는 행사를 계획중이니 <br>많은 관심 부탁드립니다.</p>
+                        <p style="font-weight: bold;">탄소발자국 감소매장</p>
+                        <p>웨이브는 회원가입시 텀블러를 증정하는 이벤트를 진행하며,<br>탄소발자국을 줄이기 위한 다양한 노력을 기울이고 있습니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </article>
     </body>
     <footer>
