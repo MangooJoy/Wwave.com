@@ -1,0 +1,218 @@
+
+                body {
+                    margin: 0;
+                    padding: 0;
+                }
+                .navb {
+                width: 1500px;
+                display: flex;
+                justify-content: space-between;
+                }
+                nav {
+                width: 100%;
+                height: 55px;
+                display: flex;
+                justify-content: space-evenly;
+                background: rgb(255, 255, 255);
+                position: fixed;
+                z-index: 99999;
+                }
+                nav > a {
+                text-decoration: none;
+                text-align: center;
+                pointer-events: none;
+                color: black;
+                font-weight: bold;
+                }
+                .logo {
+                margin-top: 12.5px;
+                }
+    
+                ul, li {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                }
+    
+                #main-menu > li {
+                float: left;
+                }
+    
+                #main-menu > li > a {
+                font-size: 18px;
+                color: rgba(0, 0, 0, 0.85);
+                text-align: center;
+                text-decoration: none;
+                letter-spacing: 0.05em;
+                display: block;
+                padding: 14px 36px;
+                font-weight: bold;
+                }
+                #main-menu > li:hover {
+                background-color: #52ace7b0;
+                transition-duration: 0.5s;
+                }
+                #sub-menu {
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.15s ease-in;
+                text-align: center;
+                }
+    
+                #sub-menu > li {
+                padding: 16px 18px;
+                border-top: 1px solid rgba(255, 255, 255, 0.15);;
+                }
+    
+                #sub-menu > li >  a {
+                color: rgb(49, 49, 49);
+                text-decoration: none;
+                font-weight: bold;
+                }
+    
+                #main-menu > li:hover #sub-menu {
+                opacity: 1;
+                visibility: visible;
+                transition-duration: 0.2s;
+                }
+    
+                #sub-menu > li >  a:hover {
+                text-decoration: underline;
+                }
+                .navbar_link > li {
+                margin-top: 15px;
+                float: left;
+                padding: 15px;
+                margin-top: 0;
+                }
+                .navbar__toggleBtn {
+                display: none;
+                }
+                footer {
+                background-color: rgb(53, 54, 54);
+                font-size: 14px;
+                color: rgb(101, 104, 103);
+                text-align: center;
+                font-weight: bold;
+                }
+                footer > p {
+                    line-height: 2em;
+                }
+                /*본문*/
+                .event {
+                    padding-top:130px;
+                    text-decoration-line: none;
+                    width: 1100px;
+                    margin: auto;
+                    padding-bottom: 70px;
+                }
+                .event > h1 {
+                    font-size: 38px;
+                    font-weight: 700;
+                    padding-bottom: 10PX;
+                    text-align: center;  
+                }
+                .event > p {
+                    text-align: center;
+                    padding-bottom: 50px;
+                }
+                .contents {
+                    margin: auto;
+                    border-top: 3px solid #52ace7b0;
+                    height: auto;
+                    margin-bottom: 32px;
+                    border-bottom: 3px solid #52ace7b0;
+                    padding-bottom: 20px;   
+                }
+                .contents > .board_top {
+                    display: flex;
+                    justify-content: space-between;
+                    padding-bottom: 10px;
+                    padding-top: 20px;
+                    border-bottom: 1px solid rgba(139, 131, 131, 0.411);
+                    text-align: center;
+                }
+                .contents > .board {
+                    padding-bottom: 100px;
+                    padding-top: 100px;
+                    text-align: center;
+                }
+                .contents > .board > img {
+                    width: 1100px;
+                }
+                .event > .notbtn {
+                    width: 170px;
+                    line-height: 38px;
+                    margin-right: 0;
+                    text-align: center;
+                    border: 1px solid #d9d9d9;
+                    border-radius: 3px;
+                    box-sizing: border-box;
+                    float: right;
+                }
+                    
+                .event > .notbtn > a {
+                    text-decoration: none;
+                    color: rgb(107, 104, 104);
+                } 
+                 /*반응형*/
+  @media (max-width: 1500px) {
+    .logo {
+      text-align: left;
+      margin-right: auto;
+      padding-left: 50px;
+  }
+  .navb ul#main-menu li{
+    float: none;
+  }
+  .main-menu {
+      display: none;
+      position: fixed;
+      top: 55px;
+      left: 0;
+      width: 100%;
+      background: #fff;
+      z-index: 999;
+      align-items: center;
+  }
+
+  .main-menu.show {
+      display: block;
+  }
+
+  .main-menu li {
+      text-align: center;
+  }
+
+  .main-menu li a {
+      display: block;
+      padding: 14px 36px;
+  }
+
+  .main-menu #sub-menu {
+      display: none;
+  }
+
+  .main-menu li:hover #sub-menu {
+      display: block;
+      position: static;
+      background-color: transparent;
+      transition-duration: 0.4s;
+  }
+  .navbar_link {
+      display: none;
+      text-align: center;
+  }
+
+  .navbar__toggleBtn {
+      display: block;
+      padding-right: 60px;
+      padding-top: 10px;
+      
+  }
+
+  .navbar__toggleBtn li {
+      margin-top: 5px;
+  }
+}
+   
